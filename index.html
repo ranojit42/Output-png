@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP FF TOOLS</title>
+    <style>
+        /* স্মুথ রেড গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+        body {
+            background: linear-gradient(180deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #d32f2f;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* বাটন স্টাইল - স্মুথ রেড কালার */
+        .btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ff5252, #ff1744);
+            color: white;
+            border: none;
+            padding: 15px 10px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 23, 68, 0.3);
+            transition: transform 0.2s, active 0.1s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* বাটনে ক্লিক করলে হালকা দেবে যাবে (Smooth Effect) */
+        .btn:active {
+            transform: scale(0.95);
+            background: #d50000;
+        }
+
+        /* বড় জয়েন বাটন */
+        .btn-large {
+            grid-column: span 2;
+            background: linear-gradient(45deg, #f44336, #c62828);
+            margin-top: 10px;
+        }
+
+        .emoji {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">🎮 VIP FF TOOLS MENU</div>
+
+    <div class="btn-container">
+        <button class="btn"><span class="emoji">🐕</span> Channel 1</button>
+        <button class="btn"><span class="emoji">🐕</span> Channel 2</button>
+        <button class="btn"><span class="emoji">🐕</span> Channel 3</button>
+        <button class="btn"><span class="emoji">🐕</span> Channel 4</button>
+        <button class="btn"><span class="emoji">🐕</span> Channel 5</button>
+        <button class="btn"><span class="emoji">🐕</span> Channel 6</button>
+        <button class="btn"><span class="emoji">🐕</span> Channel 7</button>
+        <button class="btn"><span class="emoji">🐕</span> Channel 8</button>
+        
+        <button class="btn btn-large">✅ JOINED & CONTINUE</button>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        // টেলিগ্রাম ওয়েব অ্যাপ ইনিশিয়ালাইজ করা
+        const tele = window.Telegram.WebApp;
+        tele.expand(); // পুরো স্ক্রিন জুড়ে ওপেন হবে
+    </script>
+</body>
+</html>
